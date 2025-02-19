@@ -8,7 +8,11 @@
   </head>
   <body>
     <main>
-      <form action="https://formspree.io/f/xwpvangj" method="POST">
+      <form
+        class="form1"
+        action="https://formspree.io/f/xwpvangj"
+        method="POST"
+      >
         <div class="leftform">
           <div class="logo">
             <svg
@@ -29,18 +33,29 @@
             </svg>
           </div>
           <div class="heading">
-            <h3>Welcome !</h3>
+            <h2>Welcome !</h2>
           </div>
+          <p class="description">
+            Send your Full name, Email and a lovely message ~
+          </p>
           <div class="inputs">
             <div>
-              <input type="text" name="fullname" />
+              <input type="text" name="fullname" placeholder="Enter Name" />
             </div>
             <div>
-              <input type="email" name="email" id="email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+              />
             </div>
             <div>
-              <input type="text" name="message" />
+              <input type="text" name="message" placeholder="Send a Message" />
             </div>
+          </div>
+          <div class="submitBtn">
+            <input type="submit" value="Send Info" />
           </div>
           <div class="footer">
             <p>Name</p>
@@ -55,5 +70,12 @@
         </div>
       </form>
     </main>
+
+    <!-- js linking  -->
+    <script>
+      document.querySelector(".form1").addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
   </body>
 </html>
