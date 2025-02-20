@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="star.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Contact Me</title>
@@ -40,10 +41,16 @@
           </p>
           <div class="inputs">
             <div>
-              <input type="text" name="fullname" placeholder="Enter Name" />
+              <input
+                autocomplete="off"
+                type="text"
+                name="fullname"
+                placeholder="Enter Name"
+              />
             </div>
             <div>
               <input
+                autocomplete="off"
                 type="email"
                 name="email"
                 id="email"
@@ -51,7 +58,12 @@
               />
             </div>
             <div>
-              <input type="text" name="message" placeholder="Send a Message" />
+              <input
+                type="text"
+                autocomplete="off"
+                name="message"
+                placeholder="Send a Message"
+              />
             </div>
           </div>
           <div class="submitBtn">
@@ -72,10 +84,6 @@
     </main>
 
     <!-- js linking  -->
-    <script>
-      document.querySelector(".form1").addEventListener("submit", (e) => {
-        e.preventDefault();
-      });
-    </script>
+    <script></script>
   </body>
 </html>

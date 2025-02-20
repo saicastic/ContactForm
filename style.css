@@ -85,7 +85,8 @@ form {
 
 .description {
   text-align: center;
-  margin-block: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
   color: #c5f4e0;
   font-size: 0.6rem;
   width: 70%;
